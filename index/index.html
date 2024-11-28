@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+            background-image: url('images/love.jpg');
+            background-size: cover;
+
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        .result{
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: space-between;
+        }
+        .container{
+           position: absolute;
+           top: 200px;
+      box-shadow: 0 10px 10px black;
+      backdrop-filter: blur(15px);
+border-radius: 22px ;
+           
+            width:fit-content;
+            padding: 30px;
+            height: fit-content;
+        }
+        
+        .yes{
+            padding: 20px;
+            background-color: transparent;
+            border: black solid 2px;
+            border-radius: 20px;
+            transition: all 1.3s;
+        }
+        .no{
+                padding: 20px;
+            background-color: transparent;
+            border: black solid 2px;
+            border-radius: 20px;
+        }
+        .no:hover{
+            color: transparent;
+            border: none;
+        }
+        .head h1{
+            animation: flow 1s linear infinite alternate;
+        }
+        .yes:hover{
+            transform: scale(1.2);
+            background-color: rgb(223, 126, 126);
+        }
+        @keyframes flow{
+            0%{
+                text-shadow: 0 0 10px white,
+                0 0 20px red,0 0 30px red,0 0 40px red, 0 0 50px red,0 0 60px red,0 0 70px red, 0 0 80px red,
+                ;
+            }
+            100%{
+                text-shadow: 0 0 10px rgb(255, 255, 255),0 0 20px rgb(255, 54, 54),0 0 30px rgb(255, 63, 63),0 0 40px rgb(180, 114, 114), 0 0 50px rgb(153, 102, 102), 0 0 60px rgb(153, 87, 87),
+                0 0 70px rgb(145, 92, 92),0 0 80px rgb(173, 116, 116);
+            
+           
+           
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    
+    <div class="container">
+        <div class="head">
+<h1>Do you love me ?</h1>
+        </div>
+        <div class="result">
+            <button type="submit" class="yes">Yes</button>
+            <button type="submit" class="no">No</button>
+        </div>
+        </div>
+    </div>
+  
+</body>
+</html>
